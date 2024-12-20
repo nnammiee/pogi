@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #f8c291, #e55039);
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.2s; 
+}
+
+.logo {
+    max-width: 180px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f9ca24;
+}
+
+
+.first {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(120, 101, 101, 0.548), rgba(0, 0, 0, 0.7)), url(images/bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.first h2 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.627);
+}
+
+.first p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2em;
+    color: #fff; 
+    background: rgba(255, 166, 0, 0.529);
+    border: none; 
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.btn:hover {
+    background: rgba(255, 166, 0, 0.444); 
+    transform: translateY(-2px); 
+}
+
+.about, .two {
+    padding: 50px 20px;
+    text-align: center;
+    background: #e29a36;
+}
+
+section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    font-size: 20px;
+    margin: 0 auto 20px;
+}
+
+.us {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.us h3 {
+    font-size: 30px;
+}
+
+.us .highlight ul {
+    list-style: none;
+    margin: 10px 0 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.dish {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.dish img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 10px;
+    color: #f39c12;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crunch</title>
+    <link rel="stylesheet" href="branches.css">
+    <link rel="shortcut icon" href="../FINALPROJECT_CPTR250/images/1.jpg" >
+</head>
+<body>
+    <header>
+        <img src="../FINALPROJECT_CPTR250/images/logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="Branches">The Crunch Branches</h1>
+        <div class="container">
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/butuan.jpg" alt="IMADEJAS, BUTUAN CITY">
+                <div class="overlay">IMADEJAS, BUTUAN CITY</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/cebu.jpg" alt="CEBU CITY">
+                <div class="overlay">CEBU CITY</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/galleria.jpg" alt="GALLERIA SOUTH">
+                <div class="overlay">GALLERIA SOUTH</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/imus.jpg" alt="IMUS">
+                <div class="overlay">IMUS</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/las pinas.jpg" alt="LAS PINAS">
+                <div class="overlay">LAS PINAS</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/malolos.jpg" alt="MALOLOS">
+                <div class="overlay">MALOLOS</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/manaoag.jpg" alt="MANAOAG">
+                <div class="overlay">MANAOAG</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/nueva vizcaya.jpg" alt="NUEVA VIZCAYA">
+                <div class="overlay">NUEVA VIZCAYA</div>
+            </div>
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/pangasinan.jpg" alt="PANGASINAN">
+                <div class="overlay">PANGASINAN</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Crunch. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+                    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-105px"; 
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    
+</body>
+</html>

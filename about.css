@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(120, 101, 101, 0.548), rgba(0, 0, 0, 0.7)), 
+                      url(images/BG\ LATTA.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: #333;
+    height: 100vh; 
+    overflow-x: hidden; 
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.2s;
+}
+
+header .logo {
+    max-width: 180px; 
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f9ca24;
+}
+
+
+main {
+    padding: 150px 20px 50px; 
+    text-align: center;
+    color: #fff;
+}
+
+.menu-header {
+    margin-bottom: 30px;
+}
+
+.menu-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.menu-header p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+.about, .team {
+    background: rgba(51, 51, 51, 0.9); 
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.about h2, .team h2 {
+    font-size: 2em;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.member {
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.member h3 {
+    margin: 0;
+    color: #f39c12;
+}
+
+.member p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    color: #f39c12;
+}
+
+footer p {
+    font-size: 1em;
+}

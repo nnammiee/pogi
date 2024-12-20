@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crunch</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="shortcut icon" href="../FINALPROJECT_CPTR250/images/1.jpg" >
+</head>
+<body>
+    <header>
+        <img src="../FINALPROJECT_CPTR250/images/logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About The Crunch</h2>
+            <p>The Crunch – Boneless Fried Chicken is a franchise business committed to providing a quality serving of flavored boneless fried chicken.
+
+
+                Founded by friends Ralph, Rapunzel, Joel & Kat, our goal is to share our unique style of tasty boneless fried chicken.
+                
+                
+                We also offer Chicken Shots, Shots Bucket, Half Chicken (6 pcs/flavor), and Whole Chicken (12 pcs/flavor), available in different delicious flavors such as Classic, Honey Garlic, K-Style, Spicy K-Style, Teriyaki, Cheesy Bacon, and Texas BBQ.
+                
+                
+                Treat yourself to this tasty and flavorful boneless chicken at any of our 50+ locations in the country!</p>
+        </section>
+
+        <section class="team">
+            <h2>Mission</h2>
+            <div class="member">
+                <h3>OUR MISSION</h3>
+                <p>1. To serve more people with a unique style of high-quality boneless fried chicken
+
+
+                    2. To help Filipinos start a profitable and easy-to-manage business</p>
+            </div>
+            <div class="member">
+                <h3>OUR VISION</h3>
+                <p>Through a shared commitment to excellence, we are dedicated to the uncompromising quality of our food and service while taking exceptional care of our guests and staff. We will continuously strive to surpass our own accomplishments and be recognized as one of the most progressive and sustainable businesses in the country with more than 250 branches by 2024.</p>
+            </div>
+        </section>
+        <section class="team">
+            <h2>CORE VALUES</h2>
+            <div class="member">
+                <h3>OUR MISSION</h3>
+                <p>Quality - The Crunch – Boneless Fried Chicken produces the best quality boneless fried chicken for customers to enjoy and keep coming back for more.
+
+
+                    Service - We aim to please you with every order. Providing top-notch service for every customer is our guarantee.
+                    
+                    
+                    Passion - We are not doing business merely for the money. We want to share our unique style of tasty boneless chicken with everyone, everywhere possible.</p>
+            </div>
+        
+        </section>
+
+        <section class="profile">
+            <div class="card">
+                <img src="../FINALPROJECT_CPTR250/images/profile.jpg" >
+                <h2>Naiome Joy C. Arzadon</h2>
+                <p>COMPUTER TECHNOLOGY STUDENT</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/naiomejoy.arzadon.7"><img src="../FINALPROJECT_CPTR250/images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/gorgeoustweety/"><img src="../FINALPROJECT_CPTR250/images/Instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Crunch. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+                    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-105px"; 
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crunch</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="shortcut icon" href="../FINALPROJECT_CPTR250/images/1.jpg" >
+</head>
+<body>
+    <header>
+        <img src="../FINALPROJECT_CPTR250/images/logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="header">
+            <h1>OUR MENU</h1>
+            <p>Once you go crunch, you'll crave for more crunch!</p>
+            <div class="flavors">
+                <div class="item">
+                    <span>CLASSIC</span>
+                    <img src="../FINALPROJECT_CPTR250/images/classic.png">
+                </div>
+                <div class="item">
+                    <span>HONEY GARLIC</span>
+                    <img src="../FINALPROJECT_CPTR250/images/honey garlic.png garlic.png" >
+                </div>
+                <div class="item">
+                    <span>TERIYAKI</span>
+                    <img src="../FINALPROJECT_CPTR250/images/teriyaki.png" >
+                </div>
+                <div class="item">
+                    <span>TEXAS BBQ</span>
+                    <img src="../FINALPROJECT_CPTR250/images/texas bbq.png bbq.png" >
+                </div>
+                <div class="item">
+                    <span>CHEESY BACON</span>
+                    <img src="../FINALPROJECT_CPTR250/images/cheesy bacon.png bacon.png" >
+                </div>
+                <div class="item">
+                    <span>K-STYLE</span>
+                    <img src="../FINALPROJECT_CPTR250/images/kstyle.png">
+                </div>
+                <div class="item">
+                    <span>SPICY K-STYLE</span>
+                    <img src="../FINALPROJECT_CPTR250/images/spicykstyle.png" >
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="category">
+                <h2>Main</h2>
+                <p>Half Chicken (6 pcs | 2-3 pax) <span>PHP 295</span></p>
+                <p>Whole Chicken (12 pcs | 4-6 pax) <span>PHP 545</span></p>
+            </div>
+            <div class="category">
+                <h2>Rice Meal</h2>
+                <p>Chicken Shots <span>PHP 70</span></p>
+                <p>1 PC Chicken <span>PHP 75</span></p>
+                <p>2 PCS Chicken <span>PHP 120</span></p>
+                <p>3 PCS Chicken <span>PHP 155</span></p>
+            </div>
+            <div class="category">
+                <h2>Sides</h2>
+                <p>Chicken Shots Bucket <span>PHP 150</span></p>
+                <p>Cheesy Bacon Twister Fries <span>PHP 150</span></p>
+                <p>The Crunch Burger <span>PHP 150</span></p>
+                <p>Twister Fries <span>PHP 115</span></p>
+                <p>Plain Rice <span>PHP 20</span></p>
+                <p>Extra Sauce <span>PHP 30</span></p>
+            </div>
+        </section>
+
+        <section class="order">
+            <h1>ORDER NOW VIA</h1>
+            <div class="order-options">
+                <img src="../FINALPROJECT_CPTR250/images/grab.jpg" alt="GrabFood">
+                <img src="../FINALPROJECT_CPTR250/images/foodpanda.jpg" alt="Foodpanda">
+            </div>
+            <a href="https://web.facebook.com/TheCrunchPH" class="facebook-btn">Message us on Facebook to ORDER The Crunch!</a>
+        </section>
+    <footer>
+        <p>&copy; 2024 The Crunch. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+                    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-105px"; 
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+
+</body>
+</html>
