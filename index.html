@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crunch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../FINALPROJECT_CPTR250/images/1.jpg" >
+</head>
+<body>
+    <header>
+        <img src="../FINALPROJECT_CPTR250/images/logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="food.html">Food Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="first">
+        <div>
+            <h2>THE CRUNCH</h2>
+            <p>The Crunch – Boneless Fried Chicken providing a quality serving of flavored boneless fried chicken.</p>
+            <a href="#explore" class="btn">Explore</a>
+        </div>
+    </section>
+
+    <section id="explore" class="about">
+        <h2>Exploring</h2>
+        <p>At The Crunch, we bring you the finest quality chicken, marinated with secret spices and cooked to perfection. Our commitment is to serve delicious meals that make your taste buds dance with joy!</p>
+    </section>
+
+    <section class="two">
+        <div class="us">
+            <div class="highlight">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Marinated with secret spices</li>
+                    <li>Cooked to perfection</li>
+                    <li>Locally sourced, fresh ingredients</li>
+                </ul>
+            </div>
+            <div class="dish">
+                <img src="../FINALPROJECT_CPTR250/images/1.jpg" >
+                <img src="../FINALPROJECT_CPTR250/images/2.jpg" >
+                <img src="../FINALPROJECT_CPTR250/images/3.jpg" >
+            </div>
+            <a href="food.html" class="btn">View Our Menu</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Crunch. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+                    
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-105px"; 
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
